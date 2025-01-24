@@ -7,7 +7,7 @@ import { MenuBar, Footer, DataProvider } from "@/components";
 
 export const metadata: Metadata = {
   title: "Juan Rojas - Tatuador",
-  description: "Tattoo Studio",
+  description: "Tatuador Zipaquira",
 };
 
 export default async function RootLayout({
@@ -15,13 +15,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const company = await getCompany();
+  // const company = await getCompany();
 
   return (
-    <html lang="en" className="dark">
+    <html lang="es" className="dark">
       <body className={mainFont.className}>
         <NextUIProvider>
-          <DataProvider initialData={company}>
+          <DataProvider initialData={null}>
             <MenuBar />
             {children}
             <Footer />

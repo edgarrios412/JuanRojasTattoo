@@ -1,5 +1,5 @@
 import { IArtist } from "@/interfaces";
-import { ArtistList, HeaderSection } from "@/components";
+import { HeaderSection } from "@/components";
 
 interface Props {
   artists: IArtist[];
@@ -13,7 +13,7 @@ export const ArtistSection = ({ artists }: Props) => {
           title="Our Artists"
           subtitle="Meet the talented artists who bring your designs to life."
         />
-        <ArtistList artists={artists} />
+        {/* <ArtistList artists={artists} /> */}
       </div>
     </section>
   );
