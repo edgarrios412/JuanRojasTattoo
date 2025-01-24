@@ -13,30 +13,30 @@ interface Props {
   params: { slug: string };
 }
 
-export async function generateMetadata({ params }: Props) {
-  const { slug } = params;
+// export async function generateMetadata({ params }: Props) {
+//   const { slug } = params;
 
-  try {
-    const artist = await getArtist(slug);
+//   try {
+//     const artist = await getArtist(slug);
 
-    if (!artist) {
-      return {
-        title: "Artist Not Found",
-        description: "The artist you are looking for does not exist.",
-      };
-    }
+//     if (!artist) {
+//       return {
+//         title: "Artist Not Found",
+//         description: "The artist you are looking for does not exist.",
+//       };
+//     }
 
-    return {
-      title: `${artist.name} - Atlanta Ink`,
-      description: `Explore tattoos by ${artist.name} at Atlanta Ink.`,
-    };
-  } catch {
-    return {
-      title: "Error",
-      description: "An error occurred while loading the artist data.",
-    };
-  }
-}
+//     return {
+//       title: `${artist.name} - Atlanta Ink`,
+//       description: `Explore tattoos by ${artist.name} at Atlanta Ink.`,
+//     };
+//   } catch {
+//     return {
+//       title: "Error",
+//       description: "An error occurred while loading the artist data.",
+//     };
+//   }
+// }
 
 export default async function ArtistDetailPage({ params }: Props) {
   const { slug } = params;
