@@ -1,0 +1,73 @@
+import React from "react";
+import { Metadata } from "next";
+import { getBrands, getCategories, getProducts } from "@/lib/api";
+import {
+  HeaderPage,
+  PaginationItem,
+  ProductList,
+  ProductToolbar,
+} from "@/components";
+import { IProductQueryParams } from "@/interfaces";
+
+interface Props {
+  searchParams: IProductQueryParams;
+}
+
+export const metadata: Metadata = {
+  title: "Products - Atlanta Ink",
+  description:
+    "Discover our exclusive range of high-quality tattoo products designed for professional artists and enthusiasts alike. From premium inks and needles to innovative tools and accessories, we offer everything you need to create stunning body art.",
+  keywords: "tattoos, tattoo products, atlanta",
+};
+
+export default async function ProductsPage({ searchParams }: Props) {
+  const { sort_by, search, category, brand, page = 1 } = searchParams;
+
+  const params = {
+    ...(sort_by && { sort_by }),
+    ...(search && { search }),
+    ...(category && { category }),
+    ...(brand && { brand }),
+    page,
+  };
+
+  // const [productsData, brands, categories] = await Promise.all([
+  //   getProducts(params),
+  //   getBrands(),
+  //   getCategories(),
+  // ]);
+
+  const products : any = [{name:"Hola",slug:"a", brand:"Hola",id:1}]
+
+  // const { results: products, count } = productsData;
+
+  // const totalPages = Math.ceil(count / 10);
+
+  return (
+    <main className="max-w-screen-xl mx-auto my-16 px-4 xl:px-0">
+      <HeaderPage
+        title="Nuestros productos"
+        subtitle="Descubra nuestra selección de productos de cuidado posterior y suministros para tatuajes."
+      />
+      <>
+        {/* <ProductToolbar brands={brands} categories={categories} /> */}
+        {products.length === 0 ? (
+          <section className=" relative flex justify-center items-center w-full h-[400px] rounded-xl overflow-hidden">
+            <div className="z-10 text-center text-gray-500">
+              No products found for{" "}
+              <span className="ml-2 font-semibold text-primary">
+                {search?.toUpperCase()}
+              </span>
+            </div>
+            <div className="absolute z-5 w-full h-full bg-neutral-darkgrey animate-pulse"></div>
+          </section>
+        ) : (
+          <>
+            {/* <PaginationItem totalPages={totalPages} currentPage={page} /> */}
+            <ProductList products={products} />
+          </>
+        )}
+      </>
+    </main>
+  );
+}
