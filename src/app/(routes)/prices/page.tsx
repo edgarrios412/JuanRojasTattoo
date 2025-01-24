@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function PricesPage() {
-  const prices = await getPrices();
+  // const prices = await getPrices();
 
   return (
     <main className="max-w-screen-xl mx-auto my-16 px-4 xl:px-0">
-      {prices.length > 0 ? (
+      {/* {prices.length > 0 ? (
         <>
           <HeaderPage
             title="Our Pricing"
@@ -33,7 +33,7 @@ export default async function PricesPage() {
         </>
       ) : (
         <EmptyList content="prices" />
-      )}
+      )} */}
     </main>
   );
 }
