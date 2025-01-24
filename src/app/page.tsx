@@ -22,25 +22,25 @@ import {
 } from "@/lib/api";
 
 export const metadata: Metadata = {
-  title: "Juan Rojas - Tatuador",
+  title: "Juan Rojas Tatuador",
   description:
     "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
   keywords:
-    "atlanta ink, tattoo studio, custom tattoos, tattoo designs, tattoo artists, atlanta",
+    "Juan Rojas, estudio tatto zipaquira, tatuador zipaquira, tatuajes profesional zipaquira, tatuador profesional zipa, lykahios",
   openGraph: {
-    title: "Atlanta Ink - Tattoo Studio",
+    title: "Juan Rojas Tatuador",
     description:
       "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
-    url: "https://atlanta-ink-studio.vercel.app/",
+    url: "https://juanrojastattoo.vercel.app/",
     images: [
       {
         url: "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727889010/Atlanta%20Ink%20API/atlanta-ink-seo.webp",
         width: 1280,
         height: 720,
-        alt: "Atlanta Ink Seo",
+        alt: "Juan Rojas",
       },
     ],
-    siteName: "Atlanta Ink",
+    siteName: "Juan Rojas Tattoo",
   },
 };
 
