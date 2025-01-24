@@ -76,7 +76,7 @@ export const BackToTop = () => {
           className="bg-primary text-neutral-light font-bold rounded-xl"
         >
           <ChevronUp />
-          Back to top
+          Volver arriba
         </Button>
       </motion.div>
     </AnimatePresence>

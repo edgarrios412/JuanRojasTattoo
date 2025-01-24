@@ -32,7 +32,7 @@ export const HeroSection = () => {
         className="max-w-screen-xl mx-auto px-4 md:px-0 flex flex-col items-center justify-center h-full text-center relative z-10 space-y-4"
       >
         <span className="text-md md:text-lg font-medium text-neutral-lightgray">
-          Tattoo Studio & Piercing
+          Estudio de tatuajes
         </span>
         <h1 className="text-5xl md:text-7xl font-bold text-white py-4 px-10 bg-primary rounded-xl">
           {COMPANY_NAME.toUpperCase()}

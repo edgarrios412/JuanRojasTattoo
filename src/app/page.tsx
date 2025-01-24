@@ -24,13 +24,13 @@ import {
 export const metadata: Metadata = {
   title: "Juan Rojas - Tatuador",
   description:
-    "Welcome to Atlanta Ink, your premier tattoo studio. We specialize in custom tattoo designs, ensuring every piece is unique and tailored to your vision. Book your session today!",
+    "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
   keywords:
     "atlanta ink, tattoo studio, custom tattoos, tattoo designs, tattoo artists, atlanta",
   openGraph: {
     title: "Atlanta Ink - Tattoo Studio",
     description:
-      "Welcome to Atlanta Ink, your premier tattoo studio. We specialize in custom tattoo designs, ensuring every piece is unique and tailored to your vision. Book your session today!",
+      "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
     url: "https://atlanta-ink-studio.vercel.app/",
     images: [
       {
