@@ -22,15 +22,15 @@ import {
 } from "@/lib/api";
 
 export const metadata: Metadata = {
-  title: "Juan Rojas Tatuador",
+  title: "Juan Rojas - Tatuador Zipaquirá",
   description:
-    "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
+    "Mi nombre es Juan Rojas (@lykahios en Instagram), soy un tatuador profesional ubicado en Zipaquirá, Cundinamarca. Hazte tu primer tatuaje con descuento!",
   keywords:
     "Juan Rojas, estudio tatto zipaquira, tatuador zipaquira, tatuajes profesional zipaquira, tatuador profesional zipa, lykahios",
   openGraph: {
-    title: "Juan Rojas Tatuador",
+    title: "Juan Rojas - Tatuador Zipaquirá",
     description:
-      "Soy Juan Rojas, tatuador profesional en Zipaquirá, sigueme en instagram @lykahios",
+      "Mi nombre es Juan Rojas (@lykahios en Instagram), soy un tatuador profesional ubicado en Zipaquirá, Cundinamarca. Hazte tu primer tatuaje con descuento!",
     url: "https://juanrojastattoo.vercel.app/",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         alt: "Juan Rojas",
       },
     ],
-    siteName: "Juan Rojas Tattoo",
+    siteName: "Juan Rojas - Tatuador Zipaquirá",
   },
 };
 

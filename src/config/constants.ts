@@ -7,7 +7,7 @@ if (!API_URL) {
 export const COMPANY_NAME = "Juan Rojas";
 
 export const COMPANY_DESCRIPTION = `
-Confía en nuestros expertos para tu próximo tatuaje. Con años de experiencia y pasión por los detalles, estamos aquí para hacer realidad su visión con precisión y profesionalismo. Experimente la diferencia del arte bien elaborado.
+Hola, mi nombre es Juan Rojas tatuador profesional ubicado en Zipaquirá, Cundinamarca. Confía en mi para tu próximo tatuaje. Con años de experiencia y pasión por los detalles, estamos aquí para hacer realidad su visión con precisión y profesionalismo. Experimente la diferencia del arte bien elaborado.
 `;
 
 export const DEFAULT_IMAGE = "/images/no-image.webp";
