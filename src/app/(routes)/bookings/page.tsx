@@ -27,12 +27,12 @@ export default async function BookingsPage({ searchParams }: Props) {
             title={firstName ? `Hi, ${firstName}!` : "Bookings"}
             subtitle="Schedule your appointment easily and secure your spot today!"
           />
-          <BookingForm
+          {/* <BookingForm
             artists={artists}
             initialFirstName={firstName}
             initialFirstTime={firstTime}
             initialArtist={artist}
-          />
+          /> */}
         </section>
         <ScheduleList />
       </div>
