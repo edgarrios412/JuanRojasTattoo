@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import {
-  ArtistSection,
+  // ArtistSection,
   FAQSection,
   FinalCTASection,
   HeroSection,

@@ -2,8 +2,8 @@
 export * from "./applicants/applicant-form/ApplicantForm";
 
 // Artists
-export * from "./artists/artist-list/ArtistList";
-export * from "./artists/artist-section/ArtistSection";
+// export * from "./artists/artist-list/ArtistList";
+// export * from "./artists/artist-section/ArtistSection";
 
 // Bookings
 export * from "./bookings/booking-card/BookingCard";
